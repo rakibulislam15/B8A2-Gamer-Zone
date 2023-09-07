@@ -27,8 +27,9 @@ body {
     color: #F948B2;
 }
 
-img {
-    width: 60%;
+.img-frame {
+    width: 50px;
+    height: 50px;
 }
 
 .nav-li {
@@ -56,7 +57,7 @@ img {
 
 .banner-content {
     background-image: url(../images/Group\ 14.png);
-    width: 901px;
+    width: 800px;
     height: 600px;
     padding-top: 80px;
     padding-left: 220px;
@@ -100,9 +101,18 @@ img {
 }
 
 .banner-img {
-    width: 1400px;
+    /* max-width: 100%; */
+    /* border: 2px solid salmon;
+    width: 700px;
+    height: 500px; */
+    justify-content: center;
+
+
 }
 
+img {}
+
+/*\\\\\\\\\\\\\\\\\\ media quary////////////// */
 @media screen and (max-width:576px) {
     .nav-container {
         display: grid;
@@ -113,13 +123,15 @@ img {
         flex-direction: column;
         gap: 8px;
     }
-    .banner-container{
+
+    .banner-container {
         /* display: grid; */
         /* display: flex; */
         flex-direction: column-reverse;
-        
-        
+
+
     }
+
     .banner-content {
         justify-content: center;
         width: 400px;
@@ -134,20 +146,43 @@ img {
         justify-content: center;
     }
 
+    .poster-container {
+        display: grid;
+        flex-direction: column;
+    }
+
+    .poster-img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .poster-discription {
+        text-align: center;
+    }
+
+    .poster-discription-title,
+    .poster-img {
+        width: 100%;
+
+    }
+
 }
 
+/* /////////////\\\\\\media quary end\\\\\\\\\\\\\\\////////*/
 /*......................main poster....................... */
 .poster-container {
     display: flex;
-    gap: 50px;
+    gap: 60px;
     padding-top: 8px;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    ;
 }
 
 .poster-img {
-    width: 700px;
+    width: 500px;
     height: 489px;
     padding-top: 48px;
+    padding-left: 24px;
 }
 
 .poster-discription-title {
@@ -163,15 +198,18 @@ img {
     font-size: 16px;
     font-weight: 400;
 }
-#more{
+
+#more {
     background-color: #F948B2;
-     text-transform: uppercase;
+    text-transform: uppercase;
 
 }
-.poster-discription{
+
+.poster-discription {
     text-align: end;
     padding-right: 100px;
 }
+
 .our {
     color: #534C64;
     font-size: 24px;
@@ -183,4 +221,54 @@ img {
     color: #534C64;
     font-size: 24px;
     font-weight: 700;
+}
+
+/* card-container */
+.card-container h1 {
+    color: #0B0223;
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card-container p {
+    color: #534C64;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-container-title {
+    text-align: center;
+}
+.card-container-p{
+    text-align: center;
+}
+.funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.card-styles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* margin-right: 16px 150px; */
+    padding: 24px 240px;
+}
+
+.card-styles,
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.card {
+    padding-right: 24px;
+}
+
+.card p {
+    color: #534C64;
+    font-size: 12px;
+    font-weight: 300;
 }
