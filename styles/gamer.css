@@ -241,9 +241,11 @@ img {}
 .card-container-title {
     text-align: center;
 }
-.card-container-p{
+
+.card-container-p {
     text-align: center;
 }
+
 .funny {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     color: transparent;
@@ -271,4 +273,35 @@ img {
     color: #534C64;
     font-size: 12px;
     font-weight: 300;
+}
+
+/* play games */
+.play-games {
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 100px 120px 50px 100px;
+}
+
+.play-games-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.img7 {
+    width: 500px;
+    height: 450px;
+
+}
+
+.play-games-discription {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+    align-items: center;
+}
+.play-games-content{
+    margin: 16px 70px;
+
 }
